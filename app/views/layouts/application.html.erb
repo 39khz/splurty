@@ -8,6 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
     </style>
   </head>
 
@@ -36,6 +37,22 @@
 
     <br class="clear" />
 
+    <div class="container">
     <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Proudly hacked by <a href="https://goomy.dev/">Andrew Cook</a><br />
+            Want to build your own Splurty web app? - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
